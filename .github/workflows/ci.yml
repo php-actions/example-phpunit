@@ -13,5 +13,5 @@ jobs:
         uses: php-actions/phpunit@version-sync
         with:
           configuration: example/path/to/config.xml
-          memory: 256M
+          memory_limit: 256M
           args: --no-logging --no-extensions
