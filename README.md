@@ -11,7 +11,7 @@ The file at `.github/workflows/ci.yml` shows how to use [php-actions/phpunit][ac
 
 Versions of PHPUnit and all options are available to configure. Please see the [php-actions/phpunit documentation][action-link] for more information!
 
-If you found this repository helpful, consider [sponsoring the developer][sponsor].
+If you found this repository helpful, please consider [sponsoring the developer][sponsor].
 
 [action-link]: https://github.com/php-actions/phpunit
 [actions-tab]: https://github.com/php-actions/example-phpunit/actions
