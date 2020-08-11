@@ -9,4 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@v1
-      - uses: php-actions/phpunit@version-sync
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@version-sync
+        with:
+          configuration: example/path/to/config.xml
+          memory: 256M
