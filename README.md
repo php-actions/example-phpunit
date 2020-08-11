@@ -1,7 +1,7 @@
 An example project that uses [php-actions/phpunit][action-link]
 ===
 
-This is a trivial project that holds only trivial example functionality: a greeter that can greet you by name.
+This is a trivial project that holds only simple example functionality: a greeter that can greet you by name.
 
 Check out the [**Actions tab** in the Github repository][actions-tab] to see the past actions workflows and their outputs.
 
