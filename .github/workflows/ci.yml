@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@v1
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@version-sync
+        uses: php-actions/phpunit@v8
         with:
           configuration: test/phpunit.xml
