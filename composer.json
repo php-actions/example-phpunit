@@ -3,7 +3,7 @@
 	"description": "Example project using php-actions/phpunit",
 
 	"require-dev": {
-		"phpunit/phpunit": "6.*"
+		"phpunit/phpunit": "7.*"
 	},
 	"autoload": {
 		"psr-4": {
