@@ -6,7 +6,7 @@ use App\Greeter;
 class GreeterTest extends \PHPUnit\Framework\TestCase {
 	public function testGreeterSaysHello() {
 		$greeter = new Greeter();
-		self::assertStringContainsString(
+		self::assertContains(
 			"Hello",
 			$greeter->greet()
 		);
@@ -15,11 +15,11 @@ class GreeterTest extends \PHPUnit\Framework\TestCase {
 	public function testGreeterUsesName() {
 		$greeter = new Greeter();
 
-		self::assertStringContainsString(
+		self::assertContains(
 			"Hello, Cody",
 			$greeter->greet("Cody")
 		);
-		self::assertStringContainsString(
+		self::assertContains(
 			"Hello, Sarah",
 			$greeter->greet("Sarah")
 		);
