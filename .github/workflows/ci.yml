@@ -12,6 +12,6 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@17-php-versions
         with:
+          bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           args: --coverage-text
-          bootstrap: vendor/autoload.php
