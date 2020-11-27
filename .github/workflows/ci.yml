@@ -8,7 +8,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: php-actions/composer@master
+
+      - uses: php-actions/composer@dynamic-docker
+
       - name: PHPUnit Tests
         uses: php-actions/phpunit@dynamic-docker
         with:
