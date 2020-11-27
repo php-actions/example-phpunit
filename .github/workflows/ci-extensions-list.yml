@@ -1,4 +1,4 @@
-name: CI
+name: CI-extensions-list
 
 on: [push]
 
@@ -14,7 +14,11 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@dynamic-docker
         with:
-          php_extensions: bcmath gd intl pdo_mysql
+          php_extensions:
+            - bcmath
+            - gd
+            - intl
+            - pdo_mysql
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           args: --coverage-text
