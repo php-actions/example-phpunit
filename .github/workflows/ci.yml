@@ -12,12 +12,12 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@dynamic-docker
         with:
-          php_extensions: bcmath gd intl pdo_mysql
+          php_extensions: bcmath gd intl pdo_mysql zip
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@dynamic-docker
         with:
-          php_extensions: bcmath gd intl pdo_mysql
+          php_extensions: bcmath gd intl pdo_mysql zip
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           args: --coverage-text
