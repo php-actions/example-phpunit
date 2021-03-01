@@ -3,16 +3,10 @@
 	"description": "Example project using php-actions/phpunit",
 
 	"require-dev": {
-		"ext-bcmath": "*",
 		"ext-curl": "*",
 		"ext-dom": "*",
-		"ext-gd": "*",
-		"ext-intl": "*",
 		"ext-json": "*",
-		"ext-pdo": "*",
-		"ext-pdo_mysql": "*",
 		"ext-sqlite3": "*",
-		"ext-zip": "*",
 		"phpunit/phpunit": "9.*"
 	},
 	"autoload": {
