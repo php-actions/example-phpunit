@@ -24,4 +24,8 @@ class GreeterTest extends \PHPUnit\Framework\TestCase {
 			$greeter->greet("Sarah")
 		);
 	}
+
+	public function testFalseIsTrue() {
+		self::assertTrue(false);
+	}
 }
