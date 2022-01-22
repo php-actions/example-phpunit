@@ -23,9 +23,5 @@ class GreeterTest extends \PHPUnit\Framework\TestCase {
 			"Hello, Sarah",
 			$greeter->greet("Sarah")
 		);
-		self::assertStringContainsString(
-			"Hello, Manuvai",
-			$greeter->greet("Manuvai")
-		);
 	}
 }
