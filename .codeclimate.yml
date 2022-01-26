@@ -43,11 +43,8 @@ checks:
       threshold: #language-specific defaults. overrides affect all languages.
 
 plugins:
-  phpmd:
+  sonar-php:
     enabled: true
-    config:
-      file_extensions:
-        - php
 
 exclude_patterns:
 - "**/test/"
