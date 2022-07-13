@@ -1,6 +1,8 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: [ "phpunit-version-v7" ]
 
 jobs:
   build-test:
