@@ -1,6 +1,8 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: [ "phpunit-version-v7" ]
 
 jobs:
   build-test:
@@ -13,3 +15,8 @@ jobs:
         uses: php-actions/phpunit@v7
         with:
           configuration: test/phpunit.xml
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: "test/**/*.xml"
