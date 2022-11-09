@@ -19,6 +19,8 @@ jobs:
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@44-vendored
+        env:
+          TEST_NAME: Scarlett
         with:
           vendored_phpunit_path: ./phpunit-test-vendored
           bootstrap: vendor/autoload.php
