@@ -1,0 +1,26 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: php-actions/composer@v6
+
+      - name: Grab custom PHPUnit vendor
+        run: |
+          wget -O phpunit-test-vendored https://phar.phpunit.de/phpunit-9.phar
+          chmod +x phpunit
+          ./phpunit-test-vendored --version
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@44-vendored
+        with:
+          vendored_phpunit_path: ./phpunit-test-vendored
+          bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          args: --coverage-text
