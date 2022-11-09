@@ -14,7 +14,7 @@ jobs:
       - name: Grab custom PHPUnit vendor
         run: |
           wget -O phpunit-test-vendored https://phar.phpunit.de/phpunit-9.phar
-          chmod +x phpunit
+          chmod +x phpunit-test-vendored
           ./phpunit-test-vendored --version
 
       - name: PHPUnit Tests
