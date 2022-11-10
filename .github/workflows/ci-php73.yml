@@ -1,4 +1,4 @@
-name: CI
+name: CI-old-php
 
 on: [push]
 
