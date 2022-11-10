@@ -15,7 +15,6 @@ jobs:
         uses: php-actions/phpunit@master
         env:
           TEST_NAME: Scarlett
-          EXAMPLE: example
         with:
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
