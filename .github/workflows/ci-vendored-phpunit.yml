@@ -22,7 +22,7 @@ jobs:
         env:
           TEST_NAME: Scarlett
         with:
-          vendored_phpunit_path: ./phpunit-test-vendored
+          vendored_phpunit_path: ./vendor/bin/phpunit
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           args: --coverage-text
