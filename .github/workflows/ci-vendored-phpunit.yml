@@ -11,11 +11,9 @@ jobs:
 
       - uses: php-actions/composer@v6
 
-      - name: Grab custom PHPUnit vendor
+      - name: Check version of installed PHPUnit
         run: |
-          wget -O phpunit-test-vendored https://phar.phpunit.de/phpunit-9.phar
-          chmod +x phpunit-test-vendored
-          ./phpunit-test-vendored --version
+          php ./vendor/bin/phpunit --version
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@44-vendored
