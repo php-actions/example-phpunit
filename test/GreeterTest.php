@@ -16,8 +16,8 @@ class GreeterTest extends \PHPUnit\Framework\TestCase {
 		$greeter = new Greeter();
 
 		self::assertStringContainsString(
-			"Hello, Cody",
-			$greeter->greet("Cody")
+			"Hello, Moskow",
+			$greeter->greet("Moskow")
 		);
 		self::assertStringContainsString(
 			"Hello, Sarah",
