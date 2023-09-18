@@ -19,5 +19,5 @@ jobs:
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           args: --coverage-text
-          version: 6
+          version: 8
           php_version: "7.3"
