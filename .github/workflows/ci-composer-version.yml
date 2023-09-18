@@ -12,11 +12,7 @@ jobs:
       - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@master
-        env:
-          TEST_NAME: Scarlett
+        uses: php-actions/phpunit@composer-version
         with:
-          version: 9.6
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
-          args: --coverage-text

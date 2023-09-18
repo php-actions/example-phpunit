@@ -7,7 +7,7 @@
 		"ext-dom": "*",
 		"ext-json": "*",
 		"ext-sqlite3": "*",
-		"phpunit/phpunit": "9.*"
+		"phpunit/phpunit": "9.5.26"
 	},
 	"autoload": {
 		"psr-4": {
