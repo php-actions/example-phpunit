@@ -12,7 +12,7 @@ jobs:
       - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@composer-version
+        uses: php-actions/phpunit@composer-version--user
         env:
           TEST_NAME: Scarlett
         with:
