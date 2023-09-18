@@ -1,4 +1,4 @@
-name: CI
+name: CI-composer-version
 
 on: [push]
 
