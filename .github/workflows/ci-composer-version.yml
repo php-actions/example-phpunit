@@ -1,6 +1,6 @@
 name: CI-composer-version
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build-test:
