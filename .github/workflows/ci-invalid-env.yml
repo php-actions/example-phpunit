@@ -1,0 +1,32 @@
+name: CI-Invalid-Env
+# This workflow is used to test the invalid environment variable handling in the GitHub Actions runner.
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up invalid environment variable
+        run: |
+          echo 'MULTI_LINE_ENV<<EOF' >> $GITHUB_ENV
+          echo 'MULTI_LINE_ENV=LINE 1' >> $GITHUB_ENV
+          echo 'LINE 2' >> $GITHUB_ENV
+          echo 'LINE 3' >> $GITHUB_ENV
+          echo 'LINE 4' >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+
+      - uses: BradleyGoulding/composer@master
+
+      - name: PHPUnit Tests
+        uses: BradleyGoulding/phpunit@master
+        env:
+          TEST_NAME: Scarlett
+        with:
+          version: 9.6
+          bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          args: --coverage-text
